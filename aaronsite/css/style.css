@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "open sans", sans-serif;
+  background: #fff;
+  background-color: #333;
+  color: white;
+  line-height: 1.5;
+  /* overflow-x: hidden; */
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* header */
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  opacity: 0.8;
+  position: sticky;
+  top: 0px;
+}
+
+.title .logo {
+  font-weight: 400;
+  font-size: 1.8rem;
+  margin: 0.5rem 0;
+}
+
+.text-primary {
+  color: #28a745;
+}
+
+/* navbar */
+.navbar a {
+  color: #fff;
+}
+
+.navbar a:hover {
+  border-bottom: #28a745 2px solid;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  gap: 1.3rem;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0;
+  padding: 0 0 0.5rem 0;
+}
+
+.navbar ul li:nth-child(3) {
+  display: none;
+}
+
+.hero {
+  background: url("../images/aaron_pic.jpg") no-repeat center center/cover;
+  height: 75vh;
+  position: relative;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* Image Quote */
+.img-quote img {
+  width: 100%;
+}
+
+/* About me section */
+.about-me {
+  background-color: #333;
+  padding: 1rem;
+}
+
+.about-me h3,
+.about-me p {
+  color: white;
+}
+
+.about-me h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+/* Testimonial Video Section */
+.testimonials {
+  background-color: #e2e2e2;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.testimonials h2 {
+  color: #333;
+  padding-bottom: 2rem;
+}
+
+.videos {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+iframe {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+  height: 225px;
+}
+
+/* coaching services */
+
+#contact {
+  padding: 1rem;
+}
+
+#contact h4 {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+#contact ul {
+  margin-top: 1rem;
+  display: flex;
+
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.email {
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.social a i {
+  transition: all 0.3s ease-in-out;
+}
+
+.email:hover,
+.social a:hover {
+  color: #28a745;
+}
+
+/* footer */
+footer {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 0.6rem;
+}
+
+.social a {
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0.8rem 0;
+  }
+
+  .logo {
+    font-weight: 400;
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  iframe {
+    width: 500px;
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .title {
+    justify-content: space-between;
+    padding: 0 2rem;
+  }
+
+  #about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .img-quote img {
+    height: 100%;
+  }
+
+  .videos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  iframe {
+    width: 450px;
+  }
+
+  #contact ul {
+    text-align: center;
+  }
+}
